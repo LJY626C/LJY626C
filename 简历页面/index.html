@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>首页｜何骏土木工程网站</title>
+    <style>
+        *{margin:0;padding:0;box-sizing:border-box;}
+        body{font-family:"微软雅黑",sans-serif;background:#f5f7fa;color:#333;font-size:16px;}
+        a{text-decoration:none;}
+        nav{width:100%;background:#0f3460;box-shadow:0 2px 10px #0002;position:sticky;top:0;z-index:999;}
+        .nav-wrap{max-width:1200px;margin:0 auto;display:flex;justify-content:space-between;align-items:center;padding:0 15px;}
+        .logo{color:#ffd32a;font-size:22px;font-weight:bold;line-height:60px;}
+        .nav-list{display:flex;}
+        .nav-list a{color:#fff;padding:0 12px;line-height:60px;transition:0.3s;font-size:15px;}
+        .nav-list a:hover,.nav-list a.active{background:#ffd32a;color:#000;}
+        .menu-btn{display:none;color:#fff;font-size:28px;line-height:60px;cursor:pointer;}
+        .banner{width:100%;height:auto;padding:60px 20px;background:#102c57;display:flex;align-items:center;justify-content:center;text-align:center;color:#fff;}
+        .banner h1{font-size:32px;margin-bottom:10px;}
+        .banner p{font-size:16px;opacity:0.9;}
+        .container{max-width:100%;padding:0 15px;margin:40px auto;}
+        .title{text-align:center;margin-bottom:30px;}
+        .title h2{font-size:24px;color:#0f3460;border-bottom:3px solid #ffd32a;padding-bottom:8px;display:inline-block;}
+        .grid-box{display:grid;grid-template-columns:1fr 1fr;gap:15px;margin-bottom:50px;}
+        .card{background:#fff;padding:20px;border-radius:12px;box-shadow:0 4px 15px #00000012;transition:0.3s;}
+        .card:hover{transform:translateY(-5px);box-shadow:0 8px 20px #00000018;}
+        .card h3{color:#0f3460;margin-bottom:10px;font-size:18px;}
+        .card p{color:#666;font-size:14px;line-height:1.6;margin-bottom:15px;}
+        .card a{display:inline-block;padding:7px 18px;background:#0f3460;color:#fff;border-radius:6px;font-size:14px;}
+        footer{background:#0f3460;color:#fff;text-align:center;padding:20px 15px;font-size:14px;margin-top:60px;}
+        @media(max-width:768px){
+            .menu-btn{display:block;}
+            .nav-list{position:absolute;top:60px;left:0;width:100%;background:#0f3460;flex-direction:column;display:none;}
+            .nav-list.show{display:flex;}
+            .nav-list a{width:100%;text-align:center;line-height:50px;border-bottom:1px solid #224477;}
+            .banner h1{font-size:26px;}
+            .grid-box{grid-template-columns:1fr;}
+        }
+        @media(min-width:1024px){
+            .grid-box{grid-template-columns:repeat(4,1fr);}
+            .container{max-width:1200px;padding:0 20px;}
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="nav-wrap">
+            <div class="logo">何骏 · 工程网站</div>
+            <div class="menu-btn" id="menuBtn">☰</div>
+            <div class="nav-list" id="navList">
+                <a href="index.html" class="active">首页</a>
+                <a href="about.html">个人简介</a>
+                <a href="knowledge.html">专业知识</a>
+                <a href="project.html">实训项目</a>
+                <a href="plan.html">职业规划</a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="banner">
+        <div>
+            <h1>欢迎访问我的个人网站</h1>
+            <p>广州理工学院｜土木工程｜施工监理方向</p>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="title">
+            <h2>网站内容导航</h2>
+        </div>
+        <div class="grid-box">
+            <div class="card">
+                <h3>个人简介</h3>
+                <p>个人基本信息、学习态度与专业优势介绍。</p>
+                <a href="about.html">查看详情</a>
+            </div>
+            <div class="card">
+                <h3>专业知识</h3>
+                <p>施工监理质量、安全、进度、规范体系知识。</p>
+                <a href="knowledge.html">查看详情</a>
+            </div>
+            <div class="card">
+                <h3>实训项目</h3>
+                <p>识图、测量、施工工艺、工地认知实践记录。</p>
+                <a href="project.html">查看详情</a>
+            </div>
+            <div class="card">
+                <h3>职业规划</h3>
+                <p>短期、中期、长期监理职业发展规划。</p>
+                <a href="plan.html">查看详情</a>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>© 2026 何骏｜广州理工学院 土木工程网页作业｜多页面手机适配版</p>
+    </footer>
+
+    <script>
+        let btn = document.getElementById('menuBtn');
+        let nav = document.getElementById('navList');
+        btn.onclick = function(){nav.classList.toggle('show');}
+        let aList = nav.querySelectorAll('a');
+        aList.forEach(item=>{item.onclick=function(){nav.classList.remove('show');}})
+    </script>
+</body>
+</html>

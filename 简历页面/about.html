@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>个人简介｜何骏土木工程网站</title>
+    <style>
+        *{margin:0;padding:0;box-sizing:border-box;}
+        body{font-family:"微软雅黑",sans-serif;background:#f5f7fa;color:#333;font-size:16px;}
+        a{text-decoration:none;}
+        nav{width:100%;background:#0f3460;box-shadow:0 2px 10px #0002;position:sticky;top:0;z-index:999;}
+        .nav-wrap{max-width:1200px;margin:0 auto;display:flex;justify-content:space-between;align-items:center;padding:0 15px;}
+        .logo{color:#ffd32a;font-size:22px;font-weight:bold;line-height:60px;}
+        .nav-list{display:flex;}
+        .nav-list a{color:#fff;padding:0 12px;line-height:60px;transition:0.3s;font-size:15px;}
+        .nav-list a:hover,.nav-list a.active{background:#ffd32a;color:#000;}
+        .menu-btn{display:none;color:#fff;font-size:28px;line-height:60px;cursor:pointer;}
+        .container{max-width:100%;padding:0 15px;margin:40px auto;}
+        .title{text-align:center;margin-bottom:30px;}
+        .title h2{font-size:24px;color:#0f3460;border-bottom:3px solid #ffd32a;padding-bottom:8px;display:inline-block;}
+        .content-box{background:#fff;padding:20px;border-radius:12px;box-shadow:0 4px 15px #00000012;margin-bottom:20px;}
+        .content-box h3{color:#0f3460;font-size:20px;margin:12px 0;}
+        .content-box p{line-height:1.8;font-size:15px;margin:8px 0;}
+        .tag span{display:inline-block;background:#0f3460;color:#fff;padding:5px 12px;border-radius:20px;margin:5px 3px;font-size:14px;}
+        footer{background:#0f3460;color:#fff;text-align:center;padding:20px 15px;font-size:14px;margin-top:60px;}
+        @media(max-width:768px){
+            .menu-btn{display:block;}
+            .nav-list{position:absolute;top:60px;left:0;width:100%;background:#0f3460;flex-direction:column;display:none;}
+            .nav-list.show{display:flex;}
+            .nav-list a{width:100%;text-align:center;line-height:50px;border-bottom:1px solid #224477;}
+        }
+        @media(min-width:1024px){
+            .container{max-width:1200px;padding:0 20px;}
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="nav-wrap">
+            <div class="logo">何骏 · 工程网站</div>
+            <div class="menu-btn" id="menuBtn">☰</div>
+            <div class="nav-list" id="navList">
+                <a href="index.html">首页</a>
+                <a href="about.html" class="active">个人简介</a>
+                <a href="knowledge.html">专业知识</a>
+                <a href="project.html">实训项目</a>
+                <a href="plan.html">职业规划</a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="title">
+            <h2>个人简介</h2>
+        </div>
+        <div class="content-box">
+            <h3>一、基本信息</h3>
+            <p>姓名：何骏</p>
+            <p>就读院校：广州理工学院</p>
+            <p>所学专业：土木工程（本科）</p>
+            <p>专业方向：建筑工程施工监理</p>
+            <p>学习阶段：本科在读</p>
+
+            <h3>二、个人自我介绍</h3>
+            <p>我是广州理工学院土木工程专业在读学生，性格踏实稳重、做事严谨细致、责任心强，具备良好的团队协作能力与现场适应能力。在校期间严格要求自己，认真学习每一门专业课程，打下扎实的土木工程专业基础。</p>
+            <p>相比于建筑设计、造价方向，我更加偏爱施工现场管理，因此确定了<strong>施工监理</strong>作为自己的核心发展方向。我吃苦耐劳，能够适应工地环境，善于沟通协调，适合从事现场监理、质量监督、安全管理类工作。</p>
+
+            <h3>三、学习态度与专业素养</h3>
+            <p>在专业学习上，我坚持理论结合实际，不仅熟练掌握课本知识，还主动了解施工现场真实工作流程、监理岗位职责、工程验收规范。平时注重积累施工工艺、工程材料、现场安全管理相关知识，为未来进入工程行业打下坚实基础。</p>
+            <p>我深知监理岗位责任重大，关系建筑工程质量与人民生命安全，因此一直以严谨、负责、公正的标准要求自己，坚守工程职业道德。</p>
+
+            <h3>四、个人核心优势</h3>
+            <p>1、性格严谨细致，适合监理精细化、规范化的工作要求；</p>
+            <p>2、熟悉建筑施工流程、结构构造、工程材料与验收标准；</p>
+            <p>3、沟通能力良好，能够适配施工现场多方对接协调工作；</p>
+            <p>4、吃苦耐劳、抗压能力强，可长期适应工地一线工作；</p>
+            <p>5、职业目标清晰，深耕施工监理方向，学习主动性强。</p>
+
+            <h3>五、专业技能标签</h3>
+            <div class="tag">
+                <span>施工质量监理</span>
+                <span>施工现场管理</span>
+                <span>安全隐患排查</span>
+                <span>施工进度管控</span>
+                <span>建筑施工识图</span>
+                <span>工程资料整理</span>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>© 2026 何骏｜广州理工学院 土木工程网页作业｜多页面手机适配版</p>
+    </footer>
+
+    <script>
+        let btn = document.getElementById('menuBtn');
+        let nav = document.getElementById('navList');
+        btn.onclick = function(){nav.classList.toggle('show');}
+        let aList = nav.querySelectorAll('a');
+        aList.forEach(item=>{item.onclick=function(){nav.classList.remove('show');}})
+    </script>
+</body>
+</html>

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>实训项目｜何骏土木工程网站</title>
+    <style>
+        *{margin:0;padding:0;box-sizing:border-box;}
+        body{font-family:"微软雅黑",sans-serif;background:#f5f7fa;color:#333;font-size:16px;}
+        a{text-decoration:none;}
+        nav{width:100%;background:#0f3460;box-shadow:0 2px 10px #0002;position:sticky;top:0;z-index:999;}
+        .nav-wrap{max-width:1200px;margin:0 auto;display:flex;justify-content:space-between;align-items:center;padding:0 15px;}
+        .logo{color:#ffd32a;font-size:22px;font-weight:bold;line-height:60px;}
+        .nav-list{display:flex;}
+        .nav-list a{color:#fff;padding:0 12px;line-height:60px;transition:0.3s;font-size:15px;}
+        .nav-list a:hover,.nav-list a.active{background:#ffd32a;color:#000;}
+        .menu-btn{display:none;color:#fff;font-size:28px;line-height:60px;cursor:pointer;}
+        .container{max-width:100%;padding:0 15px;margin:40px auto;}
+        .title{text-align:center;margin-bottom:30px;}
+        .title h2{font-size:24px;color:#0f3460;border-bottom:3px solid #ffd32a;padding-bottom:8px;display:inline-block;}
+        .pro-card{background:#fff;padding:20px;border-radius:12px;box-shadow:0 4px 15px #00000012;margin-bottom:20px;}
+        .pro-card h3{color:#0f3460;font-size:20px;margin:12px 0;}
+        .pro-card p{line-height:1.8;font-size:15px;margin:8px 0;}
+        footer{background:#0f3460;color:#fff;text-align:center;padding:20px 15px;font-size:14px;margin-top:60px;}
+        @media(max-width:768px){
+            .menu-btn{display:block;}
+            .nav-list{position:absolute;top:60px;left:0;width:100%;background:#0f3460;flex-direction:column;display:none;}
+            .nav-list.show{display:flex;}
+            .nav-list a{width:100%;text-align:center;line-height:50px;border-bottom:1px solid #224477;}
+        }
+        @media(min-width:1024px){
+            .container{max-width:1200px;padding:0 20px;}
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="nav-wrap">
+            <div class="logo">何骏 · 工程网站</div>
+            <div class="menu-btn" id="menuBtn">☰</div>
+            <div class="nav-list" id="navList">
+                <a href="index.html">首页</a>
+                <a href="about.html">个人简介</a>
+                <a href="knowledge.html">专业知识</a>
+                <a href="project.html" class="active">实训项目</a>
+                <a href="plan.html">职业规划</a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="title">
+            <h2>实训与实践项目经历</h2>
+        </div>
+
+        <div class="pro-card">
+            <h3>一、建筑工程识图实训</h3>
+            <p>识图实训是土木工程专业基础核心实训内容。实训期间，我系统学习建筑施工图、结构施工图、水电施工图的识图方法，熟练掌握平面图、立面图、剖面图、大样图的查看逻辑，能够快速识别墙体、梁柱、钢筋排布、门窗位置、管线走向等核心施工信息。</p>
+            <p>通过本次实训，我具备了施工现场看图、审图、核对图纸的基础能力，为未来从事施工监理图纸审核、现场对照检查工作打下扎实基础。</p>
+        </div>
+
+        <div class="pro-card">
+            <h3>二、工程测量实训</h3>
+            <p>工程测量实训包含水准仪、经纬仪、全站仪等专业仪器的实操训练。我熟练掌握标高测量、角度测量、距离测量、点位放线等基础测量技能，了解工程施工前期放线、定位、标高控制的完整流程。</p>
+            <p>测量是施工监理前期重要工作，精准的测量数据是工程质量合格的前提。本次实训让我充分认识到工程施工“失之毫厘，谬以千里”的严谨性，强化了监理岗位严谨细致的职业素养。</p>
+        </div>
+
+        <div class="pro-card">
+            <h3>三、建筑施工工艺模拟实训</h3>
+            <p>本次实训模拟施工现场完整施工流程，从基础施工、主体结构施工、砌体施工、抹灰装修到屋面防水，系统学习每一道工序的施工工艺、施工要求、质量标准与常见问题。</p>
+            <p>我重点学习了监理在各工序中的检查要点，熟悉常见施工质量缺陷、整改方法、验收标准，掌握了旁站、巡检、验收的基本监理流程。</p>
+        </div>
+
+        <div class="pro-card">
+            <h3>四、工地认知实践学习</h3>
+            <p>通过校外工地认知实习，我亲身走进在建工程项目现场，直观了解真实工地环境、施工班组作业流程、大型机械运作方式、现场安全管理模式。</p>
+            <p>现场观察监理人员日常工作，学习监理如何巡查质量、排查安全隐患、对接施工班组、填写监理资料，让我对施工监理岗位有了真实、立体、全面的认知，更加坚定了深耕监理行业的职业方向。</p>
+        </div>
+    </div>
+
+    <footer>
+        <p>© 2026 何骏｜广州理工学院 土木工程网页作业｜多页面手机适配版</p>
+    </footer>
+
+    <script>
+        let btn = document.getElementById('menuBtn');
+        let nav = document.getElementById('navList');
+        btn.onclick = function(){nav.classList.toggle('show');}
+        let aList = nav.querySelectorAll('a');
+        aList.forEach(item=>{item.onclick=function(){nav.classList.remove('show');}})
+    </script>
+</body>
+</html>
